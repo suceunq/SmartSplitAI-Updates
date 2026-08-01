@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "version": "0.3.0",
-  "publishedAt": "2026-08-01T21:42:20.183Z",
+  "publishedAt": "2026-08-01T21:45:20.971Z",
   "notes": "# SmartSplit AI 0.3.0\n\n## Parité fonctionnelle (cœur type Split3r)\n\n- **Tenons pyramidaux** tronqués (base carrée, auto-centrage), choisis en priorité en mode automatique.\n- **Densité des tenons** : faible / normale / dense par face de coupe.\n- **Pré-split multi-plans** X/Y/Z avec preview et estimation du nombre de morceaux.\n- **Labels pièces** au format `X.Y.Z` (style assemblage), noms d’objets 3MF et fichiers d’export.\n- **Repère gravé** optionnel (pastille + points) sur chaque morceau.\n- **Étiquettes 3D** en vue assemblée / éclatée + export **image PNG** d’assemblage.\n- **Catalogue imprimantes** élargi (~45 presets publics) avec recherche.\n\n## Technique\n\n- Worker Manifold : `pyramid`, `connectorDensity`, `forcedPlanes`, `engraveLabels`.\n- UI réorganisée en 7 étapes (pré-split avant auto-cut).\n",
   "package": {
     "name": "SmartSplit_AI_Setup_0.3.0.exe",
