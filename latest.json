@@ -1,12 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.2.0",
-  "publishedAt": "2026-07-31T03:09:10.585Z",
-  "notes": "# SmartSplit AI 0.2.0\n\n## Sécurité\n\n- Ajout d’un système de mise à jour automatique avec manifeste Ed25519 signé.\n- Vérification SHA-256 de chaque installateur avant exécution.\n- Téléchargements HTTPS limités aux domaines officiels de distribution GitHub.\n- Reprise des téléchargements interrompus et rollback vers la version précédente si le nouveau démarrage échoue.\n- Renforcement du sandbox Electron, des permissions, de la navigation et de la politique CSP.\n- Validation et limitation des fichiers importés, des archives 3MF, des messages IPC et des exports.\n\n## Stabilité et performances\n\n- Protection contre les archives 3MF anormalement volumineuses et les coordonnées invalides.\n- Validation stricte des paramètres transmis au moteur géométrique.\n- Gestion plus sûre des noms, tailles et doublons lors de l’export.\n- Instance Windows unique afin d’éviter les ouvertures concurrentes accidentelles.\n\n## Distribution\n\n- Nouvelle identité visuelle pour l’icône Windows.\n- Dépendances réalignées et audit de sécurité sans vulnérabilité connue.\n",
+  "version": "0.3.0",
+  "publishedAt": "2026-08-01T21:42:20.183Z",
+  "notes": "# SmartSplit AI 0.3.0\n\n## Parité fonctionnelle (cœur type Split3r)\n\n- **Tenons pyramidaux** tronqués (base carrée, auto-centrage), choisis en priorité en mode automatique.\n- **Densité des tenons** : faible / normale / dense par face de coupe.\n- **Pré-split multi-plans** X/Y/Z avec preview et estimation du nombre de morceaux.\n- **Labels pièces** au format `X.Y.Z` (style assemblage), noms d’objets 3MF et fichiers d’export.\n- **Repère gravé** optionnel (pastille + points) sur chaque morceau.\n- **Étiquettes 3D** en vue assemblée / éclatée + export **image PNG** d’assemblage.\n- **Catalogue imprimantes** élargi (~45 presets publics) avec recherche.\n\n## Technique\n\n- Worker Manifold : `pyramid`, `connectorDensity`, `forcedPlanes`, `engraveLabels`.\n- UI réorganisée en 7 étapes (pré-split avant auto-cut).\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.2.0.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.2.0/SmartSplit_AI_Setup_0.2.0.exe",
-    "sha256": "24ed009d80be8b763539923d11b0068765b7e4688a2145e06a1cf17631bb4f99",
-    "size": 100309058
+    "name": "SmartSplit_AI_Setup_0.3.0.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.3.0/SmartSplit_AI_Setup_0.3.0.exe",
+    "sha256": "222e3e2e172d0bc6ce064a127d29e49e33e0c100c89d0840be99ca367809b70a",
+    "size": 100451120
+  },
+  "rollback": {
+    "version": "0.2.0",
+    "package": {
+      "name": "SmartSplit_AI_Setup_0.2.0.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.2.0/SmartSplit_AI_Setup_0.2.0.exe",
+      "sha256": "24ed009d80be8b763539923d11b0068765b7e4688a2145e06a1cf17631bb4f99",
+      "size": 100309058
+    }
   }
 }
