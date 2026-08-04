@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.1",
-  "publishedAt": "2026-08-04T12:23:59.967Z",
-  "notes": "# SmartSplit AI 0.6.1\n\n## Correction du recentrage\n\n- Le modèle est désormais recentré à partir de ses limites réellement transformées après chaque changement d’échelle ou rotation.\n- Une seconde passe pose exactement le point le plus bas du modèle à `Z=0`.\n- Le contrôle automatique exige une erreur de centrage et de contact inférieure à `0,01 mm`.\n- Une croix orange matérialise précisément le centre du plateau dans la vue de préparation.\n- Lorsqu’un modèle dépasse le plateau sélectionné, les dépassements en largeur, profondeur et hauteur sont maintenant indiqués en millimètres.\n\nCette correction ne modifie pas le moteur de découpe, les connecteurs, le nesting ou les exports validés dans la version 0.6.0.\n",
+  "version": "0.6.2",
+  "publishedAt": "2026-08-04T12:36:32.486Z",
+  "notes": "# SmartSplit AI 0.6.2\n\n## Mise à jour maîtrisée\n\n- Une fenêtre s’affiche au lancement lorsqu’une nouvelle version est disponible.\n- **Mettre à jour maintenant** télécharge et vérifie le paquet, avertit du redémarrage, installe la version puis relance automatiquement SmartSplit AI.\n- **Plus tard** télécharge silencieusement la mise à jour et la prépare pour le prochain lancement.\n- Une mise à jour différée est de nouveau contrôlée avant installation : signature Ed25519 du manifeste, taille et empreinte SHA-256 du paquet.\n- Le paquet de retour arrière reste préparé lorsque la version précédente est disponible.\n\n## Affichage du modèle\n\n- Le plateau reste centré sous la pièce après un redimensionnement, même lorsque le modèle dépasse volontairement le volume d’impression.\n- Le modèle est posé précisément sur le plan du plateau après chaque changement d’échelle ou rotation.\n- Un repère central discret facilite le contrôle visuel de l’alignement.\n\n## Validation\n\n- Tests de sécurité du stockage différé ajoutés.\n- Tests fonctionnels validés avec import 3MF, redimensionnement à 300 %, découpe, connecteurs, nesting multi-plateaux et export.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.1.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.1/SmartSplit_AI_Setup_0.6.1.exe",
-    "sha256": "09d9b0893f8a8902af6f7a0097220345ed6c0c3280576dde8f6f97797aafdc90",
-    "size": 100477787
+    "name": "SmartSplit_AI_Setup_0.6.2.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.2/SmartSplit_AI_Setup_0.6.2.exe",
+    "sha256": "3a672b13e08db0f9389acb127c078d516e4727bd3dcd54cab83ebf836748ecca",
+    "size": 100480186
   },
   "rollback": {
-    "version": "0.6.0",
+    "version": "0.6.1",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.6.0.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.0/SmartSplit_AI_Setup_0.6.0.exe",
-      "sha256": "e17fab6213290662415df89f55b9c931dab8366eb436602800a78d778b111b49",
-      "size": 100477345
+      "name": "SmartSplit_AI_Setup_0.6.1.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.1/SmartSplit_AI_Setup_0.6.1.exe",
+      "sha256": "09d9b0893f8a8902af6f7a0097220345ed6c0c3280576dde8f6f97797aafdc90",
+      "size": 100477787
     }
   }
 }
