@@ -1,27 +1,30 @@
-# SmartSplit AI 0.5.0
+# SmartSplit AI 0.6.0
 
-## Nouvel atelier de découpe
+## Placement et préparation automatique
 
-- Interface entièrement refondue en studio technique clair : flux Préparer, Découper, Assembler et Exporter.
-- Zone de travail agrandie, commandes de cadrage, vues assemblée, éclatée et multi-plateaux.
-- Liste interactive des pièces : afficher, masquer, rendre transparente ou centrer une pièce.
+- Les modèles sont automatiquement recentrés sur X/Y et posés exactement à Z=0 après une mise à l’échelle ou une rotation.
+- Les pièces générées ne restent plus à 0,6 mm au-dessus du plateau.
+- Nouvelle validation géométrique après placement : pièce flottante, sous le plateau, hors zone, instable ou avec une surface d’appui faible.
+- Le nesting utilise désormais la silhouette projetée des pièces et non plus uniquement leur rectangle englobant.
+- Plusieurs orientations et propositions de coupe sont comparées en privilégiant le nombre minimal de plateaux.
+- Sur le modèle de régression Gatto à 450 mm pour la Snapmaker U1, la préparation passe de 5 plateaux à 4.
 
-## Import et préparation
+## Sélection des corps
 
-- Import STL, OBJ, 3MF, GLB et PLY, par sélecteur ou glisser-déposer.
-- Sélection des objets présents dans un fichier multi-corps avant préparation.
-- Analyse, réparation et simplification réglable du maillage dans un moteur isolé.
-- Catalogue d’imprimantes et volume personnalisé avec marge de sécurité.
+- Dans un fichier contenant plusieurs objets, chaque corps peut être marqué « à découper ».
+- Les corps non sélectionnés restent intacts, mais sont automatiquement orientés, placés et inclus dans les exports.
+- La sélection peut aussi être modifiée par double-clic dans la vue 3D.
 
-## Découpe et assemblage
+## Mise à jour et interface
 
-- Préparation automatique, propositions classées, pré-split X/Y/Z et coupe manuelle avancée.
-- Connecteurs pyramidaux, cylindriques, carrés, queue d’aronde, languette et STL personnalisé.
-- Densité réglable, jeu d’assemblage, repères gravés et tenons séparés en option.
-- Orientation et placement MaxRects contrôlés sur un ou plusieurs plateaux.
+- Barre de progression réelle du téléchargement avec pourcentage.
+- Vérification Ed25519 du manifeste et SHA-256 des installateurs avant exécution.
+- Téléchargement reprenable, installation silencieuse, redémarrage automatique, journal et rollback vers la version 0.5.0 si le premier démarrage échoue.
+- Nouvelle fenêtre « À propos » avec version, licence, lien officiel et vérification manuelle.
+- Thèmes clair, sombre et automatique selon Windows, appliqués à l’interface et aux fenêtres secondaires.
+- Fenêtre de nouveautés affichée une seule fois après l’installation réussie.
 
-## Fiabilité
+## Stabilité et sécurité
 
-- Correction du transfert mémoire des imports isolés qui pouvait bloquer certains fichiers.
-- Validation renforcée des chemins, formats, tailles, accessors GLB et structures PLY.
-- Calculs géométriques exécutés hors de l’interface avec progression visible.
+- Contrôles renforcés des limites de plateau et des collisions par silhouette.
+- Les sources, journaux, fichiers locaux et secrets restent exclus du dépôt de distribution.
