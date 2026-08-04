@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.2",
-  "publishedAt": "2026-08-04T12:38:16.322Z",
-  "notes": "# SmartSplit AI 0.6.2\n\n## Mise à jour maîtrisée\n\n- Une fenêtre s’affiche au lancement lorsqu’une nouvelle version est disponible.\n- **Mettre à jour maintenant** télécharge et vérifie le paquet, avertit du redémarrage, installe la version puis relance automatiquement SmartSplit AI.\n- **Plus tard** télécharge silencieusement la mise à jour et la prépare pour le prochain lancement.\n- Une mise à jour différée est de nouveau contrôlée avant installation : signature Ed25519 du manifeste, taille et empreinte SHA-256 du paquet.\n- Le paquet de retour arrière reste préparé lorsque la version précédente est disponible.\n\n## Affichage du modèle\n\n- Le plateau reste centré sous la pièce après un redimensionnement, même lorsque le modèle dépasse volontairement le volume d’impression.\n- Le modèle est posé précisément sur le plan du plateau après chaque changement d’échelle ou rotation.\n- Un repère central discret facilite le contrôle visuel de l’alignement.\n\n## Validation\n\n- Tests de sécurité du stockage différé ajoutés.\n- Tests fonctionnels validés avec import 3MF, redimensionnement à 300 %, découpe, connecteurs, nesting multi-plateaux et export.\n",
+  "version": "0.6.3",
+  "publishedAt": "2026-08-04T14:16:07.861Z",
+  "notes": "# SmartSplit AI 0.6.3\n\n## Centrage et affichage\n\n- La caméra et le viewport suivent désormais exactement la taille réelle de la fenêtre Windows, y compris après maximisation.\n- Le modèle et le plateau restent centrés à toute échelle, même à 300 % et lorsque la pièce dépasse largement la zone imprimable.\n- La vue globale ajuste correctement un grand nombre de plateaux.\n\n## Découpe et placement\n\n- Chaque morceau est posé à `Z=0` après son orientation ; les îlots déconnectés ne restent plus suspendus au-dessus du plateau.\n- Les orientations instables sont écartées avant le nesting.\n- La limite de morceaux s’adapte aux modèles extrêmes et les assemblages CAO complexes restent traitables sans bloquer l’interface.\n- Correction d’une double libération mémoire lors du rejet d’un connecteur sur une coupe complexe.\n\n## Réparation des maillages\n\n- Le bouton de réparation referme réellement les boucles de bord avant la découpe.\n- Les volumes non-manifold sont reconstruits séparément, puis réunis sans perdre leur topologie lors d’un agrandissement important.\n- Les surfaces sans volume imprimable et les îlots inférieurs à la précision numérique n’interrompent plus tout le projet.\n\n## Performances et validation\n\n- Suppression d’une recomposition géométrique redondante avant la première proposition automatique.\n- Validation automatique renforcée : centrage, contact plateau, chevauchements, limites, export et réactivité.\n- Six modèles réels STL/3MF ont été testés à 300 %, dont un STL d’environ un million de triangles et plus de 3 000 sous-volumes.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.2.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.2/SmartSplit_AI_Setup_0.6.2.exe",
-    "sha256": "3a672b13e08db0f9389acb127c078d516e4727bd3dcd54cab83ebf836748ecca",
-    "size": 100480186
+    "name": "SmartSplit_AI_Setup_0.6.3.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.3/SmartSplit_AI_Setup_0.6.3.exe",
+    "sha256": "ea562cff5141a99286ac3a5882646a6edee16954a77557338c94d1077dc26da9",
+    "size": 100489748
   },
   "rollback": {
-    "version": "0.6.0",
+    "version": "0.6.2",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.6.0.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.0/SmartSplit_AI_Setup_0.6.0.exe",
-      "sha256": "e17fab6213290662415df89f55b9c931dab8366eb436602800a78d778b111b49",
-      "size": 100477345
+      "name": "SmartSplit_AI_Setup_0.6.2.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.2/SmartSplit_AI_Setup_0.6.2.exe",
+      "sha256": "3a672b13e08db0f9389acb127c078d516e4727bd3dcd54cab83ebf836748ecca",
+      "size": 100480186
     }
   }
 }
