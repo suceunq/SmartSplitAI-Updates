@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.5",
-  "publishedAt": "2026-08-04T14:34:50.924Z",
-  "notes": "# SmartSplit AI 0.6.5\n\n## Redémarrage automatique corrigé\n\n- Correction de la variable interne `ELECTRON_RUN_AS_NODE` qui était transmise par erreur à l’application après l’installation.\n- La nouvelle version est désormais lancée comme application graphique, confirme son bon démarrage et évite un rollback injustifié.\n- Le même nettoyage est appliqué lors d’une récupération automatique vers la version précédente.\n\n## Mise à jour plus claire\n\n- La progression du téléchargement est affichée directement dans la fenêtre de mise à jour.\n- Après téléchargement et vérification, SmartSplit demande s’il faut redémarrer immédiatement ou plus tard.\n- « Redémarrer maintenant » ferme le logiciel, installe silencieusement la mise à jour et relance automatiquement la nouvelle version.\n\n## Plateau correctement centré\n\n- Après une mise à l’échelle, le plateau est centré sous l’empreinte basse réelle du ou des modèles.\n- Les éléments en hauteur ou en porte-à-faux, comme une queue, ne décalent plus le plateau hors des zones d’appui.\n",
+  "version": "0.6.6",
+  "publishedAt": "2026-08-04T15:00:09.800Z",
+  "notes": "# SmartSplit AI 0.6.6\n\n## Importations successives sécurisées\n\n- Le nouveau modèle est entièrement validé avant la libération du projet courant.\n- Un fichier incomplet, corrompu, trop lourd ou non exploitable affiche une erreur sans fermer SmartSplit AI et sans remplacer le modèle déjà ouvert.\n- Les calculs géométriques en cours sont annulés proprement avant le remplacement d’une scène.\n- Les géométries, matériaux et textures de l’ancien modèle sont libérés afin d’éviter une accumulation de RAM ou de VRAM.\n\n## Aucune fermeture inattendue\n\n- Une mise à jour téléchargée en différé n’est plus installée automatiquement pendant une session de travail.\n- Au prochain lancement, SmartSplit affiche « Redémarrer maintenant » ou « Redémarrer plus tard » et attend explicitement la décision de l’utilisateur.\n- Le correctif de relance automatique sans `ELECTRON_RUN_AS_NODE` reste actif.\n\n## Centrage après transformation\n\n- Après chaque échelle ou rotation, SmartSplit recalcule les limites réelles du maillage transformé.\n- Le centre du volume est aligné avec le centre du plateau sur X et Y.\n- Le point le plus bas est posé à Z=0 et le cadrage caméra est recalculé.\n\n## Diagnostics\n\n- Ajout d’un journal local et expurgé pour les erreurs du processus principal, du renderer, des workers Electron et des imports.\n- Aucun chemin complet, URL ou secret n’est enregistré dans les messages diagnostiques.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.5.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.5/SmartSplit_AI_Setup_0.6.5.exe",
-    "sha256": "800a2ada7ae62e9354e5726e0248e109c13a200d70a21a6a10e6abc7588b2937",
-    "size": 100491134
+    "name": "SmartSplit_AI_Setup_0.6.6.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.6/SmartSplit_AI_Setup_0.6.6.exe",
+    "sha256": "d6d92f34e9bceb7cbe6ba882160737989b665f42de95057894e72d625abbcc65",
+    "size": 100493337
   },
   "rollback": {
-    "version": "0.6.3",
+    "version": "0.6.5",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.6.3.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.3/SmartSplit_AI_Setup_0.6.3.exe",
-      "sha256": "ea562cff5141a99286ac3a5882646a6edee16954a77557338c94d1077dc26da9",
-      "size": 100489748
+      "name": "SmartSplit_AI_Setup_0.6.5.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.5/SmartSplit_AI_Setup_0.6.5.exe",
+      "sha256": "800a2ada7ae62e9354e5726e0248e109c13a200d70a21a6a10e6abc7588b2937",
+      "size": 100491134
     }
   }
 }

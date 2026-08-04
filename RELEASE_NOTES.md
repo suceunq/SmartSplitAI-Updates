@@ -1,18 +1,25 @@
-# SmartSplit AI 0.6.5
+# SmartSplit AI 0.6.6
 
-## Redémarrage automatique corrigé
+## Importations successives sécurisées
 
-- Correction de la variable interne `ELECTRON_RUN_AS_NODE` qui était transmise par erreur à l’application après l’installation.
-- La nouvelle version est désormais lancée comme application graphique, confirme son bon démarrage et évite un rollback injustifié.
-- Le même nettoyage est appliqué lors d’une récupération automatique vers la version précédente.
+- Le nouveau modèle est entièrement validé avant la libération du projet courant.
+- Un fichier incomplet, corrompu, trop lourd ou non exploitable affiche une erreur sans fermer SmartSplit AI et sans remplacer le modèle déjà ouvert.
+- Les calculs géométriques en cours sont annulés proprement avant le remplacement d’une scène.
+- Les géométries, matériaux et textures de l’ancien modèle sont libérés afin d’éviter une accumulation de RAM ou de VRAM.
 
-## Mise à jour plus claire
+## Aucune fermeture inattendue
 
-- La progression du téléchargement est affichée directement dans la fenêtre de mise à jour.
-- Après téléchargement et vérification, SmartSplit demande s’il faut redémarrer immédiatement ou plus tard.
-- « Redémarrer maintenant » ferme le logiciel, installe silencieusement la mise à jour et relance automatiquement la nouvelle version.
+- Une mise à jour téléchargée en différé n’est plus installée automatiquement pendant une session de travail.
+- Au prochain lancement, SmartSplit affiche « Redémarrer maintenant » ou « Redémarrer plus tard » et attend explicitement la décision de l’utilisateur.
+- Le correctif de relance automatique sans `ELECTRON_RUN_AS_NODE` reste actif.
 
-## Plateau correctement centré
+## Centrage après transformation
 
-- Après une mise à l’échelle, le plateau est centré sous l’empreinte basse réelle du ou des modèles.
-- Les éléments en hauteur ou en porte-à-faux, comme une queue, ne décalent plus le plateau hors des zones d’appui.
+- Après chaque échelle ou rotation, SmartSplit recalcule les limites réelles du maillage transformé.
+- Le centre du volume est aligné avec le centre du plateau sur X et Y.
+- Le point le plus bas est posé à Z=0 et le cadrage caméra est recalculé.
+
+## Diagnostics
+
+- Ajout d’un journal local et expurgé pour les erreurs du processus principal, du renderer, des workers Electron et des imports.
+- Aucun chemin complet, URL ou secret n’est enregistré dans les messages diagnostiques.
