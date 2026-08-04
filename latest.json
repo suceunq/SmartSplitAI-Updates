@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.3",
-  "publishedAt": "2026-08-04T14:16:07.861Z",
-  "notes": "# SmartSplit AI 0.6.3\n\n## Centrage et affichage\n\n- La caméra et le viewport suivent désormais exactement la taille réelle de la fenêtre Windows, y compris après maximisation.\n- Le modèle et le plateau restent centrés à toute échelle, même à 300 % et lorsque la pièce dépasse largement la zone imprimable.\n- La vue globale ajuste correctement un grand nombre de plateaux.\n\n## Découpe et placement\n\n- Chaque morceau est posé à `Z=0` après son orientation ; les îlots déconnectés ne restent plus suspendus au-dessus du plateau.\n- Les orientations instables sont écartées avant le nesting.\n- La limite de morceaux s’adapte aux modèles extrêmes et les assemblages CAO complexes restent traitables sans bloquer l’interface.\n- Correction d’une double libération mémoire lors du rejet d’un connecteur sur une coupe complexe.\n\n## Réparation des maillages\n\n- Le bouton de réparation referme réellement les boucles de bord avant la découpe.\n- Les volumes non-manifold sont reconstruits séparément, puis réunis sans perdre leur topologie lors d’un agrandissement important.\n- Les surfaces sans volume imprimable et les îlots inférieurs à la précision numérique n’interrompent plus tout le projet.\n\n## Performances et validation\n\n- Suppression d’une recomposition géométrique redondante avant la première proposition automatique.\n- Validation automatique renforcée : centrage, contact plateau, chevauchements, limites, export et réactivité.\n- Six modèles réels STL/3MF ont été testés à 300 %, dont un STL d’environ un million de triangles et plus de 3 000 sous-volumes.\n",
+  "version": "0.6.4",
+  "publishedAt": "2026-08-04T14:29:56.257Z",
+  "notes": "# SmartSplit AI 0.6.4\n\n## Mise à jour plus claire\n\n- La progression du téléchargement est maintenant affichée directement dans la fenêtre de mise à jour.\n- Après téléchargement et vérification, SmartSplit demande s’il faut redémarrer immédiatement ou plus tard.\n- « Redémarrer maintenant » ferme proprement le logiciel, installe silencieusement la mise à jour et relance automatiquement la nouvelle version.\n- « Redémarrer plus tard » conserve le paquet signé pour le prochain lancement.\n\n## Plateau correctement centré\n\n- Après une mise à l’échelle, le plateau est recentré sous l’empreinte basse réelle du ou des modèles.\n- Les appendices en hauteur, comme une queue ou des bras écartés, ne décalent plus artificiellement le plateau hors de la zone d’appui.\n- Le calcul reste échantillonné sur les maillages lourds afin de préserver la réactivité.\n\n## Stabilité\n\n- Les sorties de diagnostic des autotests ne peuvent plus provoquer d’erreur `EPIPE` dans Electron.\n- Le téléchargement reste vérifié par signature Ed25519 et empreinte SHA-256 avant toute installation.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.3.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.3/SmartSplit_AI_Setup_0.6.3.exe",
-    "sha256": "ea562cff5141a99286ac3a5882646a6edee16954a77557338c94d1077dc26da9",
-    "size": 100489748
+    "name": "SmartSplit_AI_Setup_0.6.4.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.4/SmartSplit_AI_Setup_0.6.4.exe",
+    "sha256": "980cbeba9e13b6624cb615a0dde227e8311244317bc4dc8875d5461415c775d8",
+    "size": 100491240
   },
   "rollback": {
-    "version": "0.6.2",
+    "version": "0.6.3",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.6.2.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.2/SmartSplit_AI_Setup_0.6.2.exe",
-      "sha256": "3a672b13e08db0f9389acb127c078d516e4727bd3dcd54cab83ebf836748ecca",
-      "size": 100480186
+      "name": "SmartSplit_AI_Setup_0.6.3.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.3/SmartSplit_AI_Setup_0.6.3.exe",
+      "sha256": "ea562cff5141a99286ac3a5882646a6edee16954a77557338c94d1077dc26da9",
+      "size": 100489748
     }
   }
 }
