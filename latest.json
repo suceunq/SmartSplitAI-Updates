@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.4",
-  "publishedAt": "2026-08-04T14:29:56.257Z",
-  "notes": "# SmartSplit AI 0.6.4\n\n## Mise à jour plus claire\n\n- La progression du téléchargement est maintenant affichée directement dans la fenêtre de mise à jour.\n- Après téléchargement et vérification, SmartSplit demande s’il faut redémarrer immédiatement ou plus tard.\n- « Redémarrer maintenant » ferme proprement le logiciel, installe silencieusement la mise à jour et relance automatiquement la nouvelle version.\n- « Redémarrer plus tard » conserve le paquet signé pour le prochain lancement.\n\n## Plateau correctement centré\n\n- Après une mise à l’échelle, le plateau est recentré sous l’empreinte basse réelle du ou des modèles.\n- Les appendices en hauteur, comme une queue ou des bras écartés, ne décalent plus artificiellement le plateau hors de la zone d’appui.\n- Le calcul reste échantillonné sur les maillages lourds afin de préserver la réactivité.\n\n## Stabilité\n\n- Les sorties de diagnostic des autotests ne peuvent plus provoquer d’erreur `EPIPE` dans Electron.\n- Le téléchargement reste vérifié par signature Ed25519 et empreinte SHA-256 avant toute installation.\n",
+  "version": "0.6.5",
+  "publishedAt": "2026-08-04T14:34:50.924Z",
+  "notes": "# SmartSplit AI 0.6.5\n\n## Redémarrage automatique corrigé\n\n- Correction de la variable interne `ELECTRON_RUN_AS_NODE` qui était transmise par erreur à l’application après l’installation.\n- La nouvelle version est désormais lancée comme application graphique, confirme son bon démarrage et évite un rollback injustifié.\n- Le même nettoyage est appliqué lors d’une récupération automatique vers la version précédente.\n\n## Mise à jour plus claire\n\n- La progression du téléchargement est affichée directement dans la fenêtre de mise à jour.\n- Après téléchargement et vérification, SmartSplit demande s’il faut redémarrer immédiatement ou plus tard.\n- « Redémarrer maintenant » ferme le logiciel, installe silencieusement la mise à jour et relance automatiquement la nouvelle version.\n\n## Plateau correctement centré\n\n- Après une mise à l’échelle, le plateau est centré sous l’empreinte basse réelle du ou des modèles.\n- Les éléments en hauteur ou en porte-à-faux, comme une queue, ne décalent plus le plateau hors des zones d’appui.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.4.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.4/SmartSplit_AI_Setup_0.6.4.exe",
-    "sha256": "980cbeba9e13b6624cb615a0dde227e8311244317bc4dc8875d5461415c775d8",
-    "size": 100491240
+    "name": "SmartSplit_AI_Setup_0.6.5.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.5/SmartSplit_AI_Setup_0.6.5.exe",
+    "sha256": "800a2ada7ae62e9354e5726e0248e109c13a200d70a21a6a10e6abc7588b2937",
+    "size": 100491134
   },
   "rollback": {
     "version": "0.6.3",
