@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.0",
-  "publishedAt": "2026-08-04T12:12:48.826Z",
-  "notes": "# SmartSplit AI 0.6.0\n\n## Placement et préparation automatique\n\n- Les modèles sont automatiquement recentrés sur X/Y et posés exactement à Z=0 après une mise à l’échelle ou une rotation.\n- Les pièces générées ne restent plus à 0,6 mm au-dessus du plateau.\n- Nouvelle validation géométrique après placement : pièce flottante, sous le plateau, hors zone, instable ou avec une surface d’appui faible.\n- Le nesting utilise désormais la silhouette projetée des pièces et non plus uniquement leur rectangle englobant.\n- Plusieurs orientations et propositions de coupe sont comparées en privilégiant le nombre minimal de plateaux.\n- Sur le modèle de régression Gatto à 450 mm pour la Snapmaker U1, la préparation passe de 5 plateaux à 4.\n\n## Sélection des corps\n\n- Dans un fichier contenant plusieurs objets, chaque corps peut être marqué « à découper ».\n- Les corps non sélectionnés restent intacts, mais sont automatiquement orientés, placés et inclus dans les exports.\n- La sélection peut aussi être modifiée par double-clic dans la vue 3D.\n\n## Mise à jour et interface\n\n- Barre de progression réelle du téléchargement avec pourcentage.\n- Vérification Ed25519 du manifeste et SHA-256 des installateurs avant exécution.\n- Téléchargement reprenable, installation silencieuse, redémarrage automatique, journal et rollback vers la version 0.5.0 si le premier démarrage échoue.\n- Nouvelle fenêtre « À propos » avec version, licence, lien officiel et vérification manuelle.\n- Thèmes clair, sombre et automatique selon Windows, appliqués à l’interface et aux fenêtres secondaires.\n- Fenêtre de nouveautés affichée une seule fois après l’installation réussie.\n\n## Stabilité et sécurité\n\n- Contrôles renforcés des limites de plateau et des collisions par silhouette.\n- Les sources, journaux, fichiers locaux et secrets restent exclus du dépôt de distribution.\n",
+  "version": "0.6.1",
+  "publishedAt": "2026-08-04T12:23:59.967Z",
+  "notes": "# SmartSplit AI 0.6.1\n\n## Correction du recentrage\n\n- Le modèle est désormais recentré à partir de ses limites réellement transformées après chaque changement d’échelle ou rotation.\n- Une seconde passe pose exactement le point le plus bas du modèle à `Z=0`.\n- Le contrôle automatique exige une erreur de centrage et de contact inférieure à `0,01 mm`.\n- Une croix orange matérialise précisément le centre du plateau dans la vue de préparation.\n- Lorsqu’un modèle dépasse le plateau sélectionné, les dépassements en largeur, profondeur et hauteur sont maintenant indiqués en millimètres.\n\nCette correction ne modifie pas le moteur de découpe, les connecteurs, le nesting ou les exports validés dans la version 0.6.0.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.0.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.0/SmartSplit_AI_Setup_0.6.0.exe",
-    "sha256": "e17fab6213290662415df89f55b9c931dab8366eb436602800a78d778b111b49",
-    "size": 100477345
+    "name": "SmartSplit_AI_Setup_0.6.1.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.1/SmartSplit_AI_Setup_0.6.1.exe",
+    "sha256": "09d9b0893f8a8902af6f7a0097220345ed6c0c3280576dde8f6f97797aafdc90",
+    "size": 100477787
   },
   "rollback": {
-    "version": "0.5.0",
+    "version": "0.6.0",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.5.0.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.5.0/SmartSplit_AI_Setup_0.5.0.exe",
-      "sha256": "0dff05686f60f626c3c5d02213ca7f8fc12acb95610435df5d69b1c48b33cde9",
-      "size": 100470098
+      "name": "SmartSplit_AI_Setup_0.6.0.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.0/SmartSplit_AI_Setup_0.6.0.exe",
+      "sha256": "e17fab6213290662415df89f55b9c931dab8366eb436602800a78d778b111b49",
+      "size": 100477345
     }
   }
 }
