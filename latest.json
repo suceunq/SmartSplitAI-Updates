@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.4.0",
-  "publishedAt": "2026-08-01T22:04:26.850Z",
-  "notes": "# SmartSplit AI 0.4.0\n\n## Nouvelles fonctions (parité Split3r étendue)\n\n- **Mode assemblage creux + tenons séparés** (hollow-loose) : cavités sur les deux faces, tenons exportés comme pièces jaunes.\n- **Tenon personnalisé STL** : importez votre forme de joint.\n- **Extract région** : découpe une tranche (axe + position + épaisseur) avec joints.\n- **Analyse maillage détaillée** : triangles, bbox, volume, bords/trous, non-manifold.\n- **Rotations 90°** X/Y/Z sur le modèle source.\n- **Catalogue imprimantes** encore élargi.\n- Labels / repères, pré-split, pyramidaux (déjà en 0.3).\n\n## Technique\n\n- Worker : `assemblyMode`, `custom`, `extract`, `analyze`.\n- UI 8 étapes.\n",
+  "version": "0.5.0",
+  "publishedAt": "2026-08-04T11:42:08.786Z",
+  "notes": "# SmartSplit AI 0.5.0\n\n## Nouvel atelier de découpe\n\n- Interface entièrement refondue en studio technique clair : flux Préparer, Découper, Assembler et Exporter.\n- Zone de travail agrandie, commandes de cadrage, vues assemblée, éclatée et multi-plateaux.\n- Liste interactive des pièces : afficher, masquer, rendre transparente ou centrer une pièce.\n\n## Import et préparation\n\n- Import STL, OBJ, 3MF, GLB et PLY, par sélecteur ou glisser-déposer.\n- Sélection des objets présents dans un fichier multi-corps avant préparation.\n- Analyse, réparation et simplification réglable du maillage dans un moteur isolé.\n- Catalogue d’imprimantes et volume personnalisé avec marge de sécurité.\n\n## Découpe et assemblage\n\n- Préparation automatique, propositions classées, pré-split X/Y/Z et coupe manuelle avancée.\n- Connecteurs pyramidaux, cylindriques, carrés, queue d’aronde, languette et STL personnalisé.\n- Densité réglable, jeu d’assemblage, repères gravés et tenons séparés en option.\n- Orientation et placement MaxRects contrôlés sur un ou plusieurs plateaux.\n\n## Fiabilité\n\n- Correction du transfert mémoire des imports isolés qui pouvait bloquer certains fichiers.\n- Validation renforcée des chemins, formats, tailles, accessors GLB et structures PLY.\n- Calculs géométriques exécutés hors de l’interface avec progression visible.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.4.0.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.4.0/SmartSplit_AI_Setup_0.4.0.exe",
-    "sha256": "44fda5046010499e39e070347ac3099fe0a3e063b000e032f9fb64e6fc01f870",
-    "size": 100457385
+    "name": "SmartSplit_AI_Setup_0.5.0.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.5.0/SmartSplit_AI_Setup_0.5.0.exe",
+    "sha256": "0dff05686f60f626c3c5d02213ca7f8fc12acb95610435df5d69b1c48b33cde9",
+    "size": 100470098
   },
   "rollback": {
-    "version": "0.3.0",
+    "version": "0.4.0",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.3.0.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.3.0/SmartSplit_AI_Setup_0.3.0.exe",
-      "sha256": "222e3e2e172d0bc6ce064a127d29e49e33e0c100c89d0840be99ca367809b70a",
-      "size": 100451120
+      "name": "SmartSplit_AI_Setup_0.4.0.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.4.0/SmartSplit_AI_Setup_0.4.0.exe",
+      "sha256": "44fda5046010499e39e070347ac3099fe0a3e063b000e032f9fb64e6fc01f870",
+      "size": 100457385
     }
   }
 }
