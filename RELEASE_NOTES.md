@@ -1,25 +1,18 @@
-# SmartSplit AI 0.6.6
+# SmartSplit AI 0.6.7
 
-## Importations successives sécurisées
+## Résumé de mise à jour corrigé
 
-- Le nouveau modèle est entièrement validé avant la libération du projet courant.
-- Un fichier incomplet, corrompu, trop lourd ou non exploitable affiche une erreur sans fermer SmartSplit AI et sans remplacer le modèle déjà ouvert.
-- Les calculs géométriques en cours sont annulés proprement avant le remplacement d’une scène.
-- Les géométries, matériaux et textures de l’ancien modèle sont libérés afin d’éviter une accumulation de RAM ou de VRAM.
+- Le nom et le numéro de version ne sont plus répétés dans la fenêtre « Mise à jour installée ».
+- Le premier titre Markdown des notes est reconnu et retiré lorsque la fenêtre affiche déjà cette version.
 
-## Aucune fermeture inattendue
+## Vue éclatée plus propre
 
-- Une mise à jour téléchargée en différé n’est plus installée automatiquement pendant une session de travail.
-- Au prochain lancement, SmartSplit affiche « Redémarrer maintenant » ou « Redémarrer plus tard » et attend explicitement la décision de l’utilisateur.
-- Le correctif de relance automatique sans `ELECTRON_RUN_AS_NODE` reste actif.
+- Les micro-îlots numériques issus de la géométrie ou de l'intersection de plusieurs plans ne deviennent plus des pièces autonomes minuscules.
+- Ces détails sont rattachés au morceau imprimable le plus proche sans supprimer ni déplacer leur géométrie.
+- Les vrais petits éléments restent séparés lorsqu'ils possèdent une taille et un volume réellement imprimables.
 
-## Centrage après transformation
+## Validation
 
-- Après chaque échelle ou rotation, SmartSplit recalcule les limites réelles du maillage transformé.
-- Le centre du volume est aligné avec le centre du plateau sur X et Y.
-- Le point le plus bas est posé à Z=0 et le cadrage caméra est recalculé.
-
-## Diagnostics
-
-- Ajout d’un journal local et expurgé pour les erreurs du processus principal, du renderer, des workers Electron et des imports.
-- Aucun chemin complet, URL ou secret n’est enregistré dans les messages diagnostiques.
+- Régression reproduite avec `Gatto+Silvestro.3mf` à 300 % : 3 micro-fragments parasites rattachés, passage de 10 à 7 morceaux utiles.
+- Conservation du volume contrôlée, nesting sur 4 plateaux validé et export maintenu disponible.
+- 31 tests automatisés validés, dont deux nouveaux tests dédiés aux notes de version et aux micro-îlots.

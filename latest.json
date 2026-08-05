@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.6",
-  "publishedAt": "2026-08-04T15:00:09.800Z",
-  "notes": "# SmartSplit AI 0.6.6\n\n## Importations successives sécurisées\n\n- Le nouveau modèle est entièrement validé avant la libération du projet courant.\n- Un fichier incomplet, corrompu, trop lourd ou non exploitable affiche une erreur sans fermer SmartSplit AI et sans remplacer le modèle déjà ouvert.\n- Les calculs géométriques en cours sont annulés proprement avant le remplacement d’une scène.\n- Les géométries, matériaux et textures de l’ancien modèle sont libérés afin d’éviter une accumulation de RAM ou de VRAM.\n\n## Aucune fermeture inattendue\n\n- Une mise à jour téléchargée en différé n’est plus installée automatiquement pendant une session de travail.\n- Au prochain lancement, SmartSplit affiche « Redémarrer maintenant » ou « Redémarrer plus tard » et attend explicitement la décision de l’utilisateur.\n- Le correctif de relance automatique sans `ELECTRON_RUN_AS_NODE` reste actif.\n\n## Centrage après transformation\n\n- Après chaque échelle ou rotation, SmartSplit recalcule les limites réelles du maillage transformé.\n- Le centre du volume est aligné avec le centre du plateau sur X et Y.\n- Le point le plus bas est posé à Z=0 et le cadrage caméra est recalculé.\n\n## Diagnostics\n\n- Ajout d’un journal local et expurgé pour les erreurs du processus principal, du renderer, des workers Electron et des imports.\n- Aucun chemin complet, URL ou secret n’est enregistré dans les messages diagnostiques.\n",
+  "version": "0.6.7",
+  "publishedAt": "2026-08-05T02:40:46.721Z",
+  "notes": "# SmartSplit AI 0.6.7\n\n## Résumé de mise à jour corrigé\n\n- Le nom et le numéro de version ne sont plus répétés dans la fenêtre « Mise à jour installée ».\n- Le premier titre Markdown des notes est reconnu et retiré lorsque la fenêtre affiche déjà cette version.\n\n## Vue éclatée plus propre\n\n- Les micro-îlots numériques issus de la géométrie ou de l'intersection de plusieurs plans ne deviennent plus des pièces autonomes minuscules.\n- Ces détails sont rattachés au morceau imprimable le plus proche sans supprimer ni déplacer leur géométrie.\n- Les vrais petits éléments restent séparés lorsqu'ils possèdent une taille et un volume réellement imprimables.\n\n## Validation\n\n- Régression reproduite avec `Gatto+Silvestro.3mf` à 300 % : 3 micro-fragments parasites rattachés, passage de 10 à 7 morceaux utiles.\n- Conservation du volume contrôlée, nesting sur 4 plateaux validé et export maintenu disponible.\n- 31 tests automatisés validés, dont deux nouveaux tests dédiés aux notes de version et aux micro-îlots.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.6.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.6/SmartSplit_AI_Setup_0.6.6.exe",
-    "sha256": "d6d92f34e9bceb7cbe6ba882160737989b665f42de95057894e72d625abbcc65",
-    "size": 100493337
+    "name": "SmartSplit_AI_Setup_0.6.7.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.7/SmartSplit_AI_Setup_0.6.7.exe",
+    "sha256": "5da0ed5f716094e16c303a93a837b90d517e6ed53e7e8b6624d8301dc2c83416",
+    "size": 100494927
   },
   "rollback": {
-    "version": "0.6.5",
+    "version": "0.6.6",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.6.5.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.5/SmartSplit_AI_Setup_0.6.5.exe",
-      "sha256": "800a2ada7ae62e9354e5726e0248e109c13a200d70a21a6a10e6abc7588b2937",
-      "size": 100491134
+      "name": "SmartSplit_AI_Setup_0.6.6.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.6/SmartSplit_AI_Setup_0.6.6.exe",
+      "sha256": "d6d92f34e9bceb7cbe6ba882160737989b665f42de95057894e72d625abbcc65",
+      "size": 100493337
     }
   }
 }
