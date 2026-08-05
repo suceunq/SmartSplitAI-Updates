@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.7",
-  "publishedAt": "2026-08-05T02:40:46.721Z",
-  "notes": "# SmartSplit AI 0.6.7\n\n## Résumé de mise à jour corrigé\n\n- Le nom et le numéro de version ne sont plus répétés dans la fenêtre « Mise à jour installée ».\n- Le premier titre Markdown des notes est reconnu et retiré lorsque la fenêtre affiche déjà cette version.\n\n## Vue éclatée plus propre\n\n- Les micro-îlots numériques issus de la géométrie ou de l'intersection de plusieurs plans ne deviennent plus des pièces autonomes minuscules.\n- Ces détails sont rattachés au morceau imprimable le plus proche sans supprimer ni déplacer leur géométrie.\n- Les vrais petits éléments restent séparés lorsqu'ils possèdent une taille et un volume réellement imprimables.\n\n## Validation\n\n- Régression reproduite avec `Gatto+Silvestro.3mf` à 300 % : 3 micro-fragments parasites rattachés, passage de 10 à 7 morceaux utiles.\n- Conservation du volume contrôlée, nesting sur 4 plateaux validé et export maintenu disponible.\n- 31 tests automatisés validés, dont deux nouveaux tests dédiés aux notes de version et aux micro-îlots.\n",
+  "version": "0.6.8",
+  "publishedAt": "2026-08-05T02:58:41.897Z",
+  "notes": "# SmartSplit AI 0.6.8\n\n## Fenêtre À propos simplifiée\n\n- La ligne « Développeur » a été retirée.\n- Le bouton « Site officiel / GitHub » devient « Site officiel ».\n- Le bouton ouvre désormais directement `https://www.bob59.fr/` dans le navigateur par défaut.\n- L'ouverture externe est limitée au domaine HTTPS officiel `www.bob59.fr`.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.7.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.7/SmartSplit_AI_Setup_0.6.7.exe",
-    "sha256": "5da0ed5f716094e16c303a93a837b90d517e6ed53e7e8b6624d8301dc2c83416",
-    "size": 100494927
+    "name": "SmartSplit_AI_Setup_0.6.8.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.8/SmartSplit_AI_Setup_0.6.8.exe",
+    "sha256": "ffa0291de0e2aba9886a4f293e2d646da855772444090300913fafdeb02c7cda",
+    "size": 100494919
   },
   "rollback": {
-    "version": "0.6.6",
+    "version": "0.6.7",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.6.6.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.6/SmartSplit_AI_Setup_0.6.6.exe",
-      "sha256": "d6d92f34e9bceb7cbe6ba882160737989b665f42de95057894e72d625abbcc65",
-      "size": 100493337
+      "name": "SmartSplit_AI_Setup_0.6.7.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.7/SmartSplit_AI_Setup_0.6.7.exe",
+      "sha256": "5da0ed5f716094e16c303a93a837b90d517e6ed53e7e8b6624d8301dc2c83416",
+      "size": 100494927
     }
   }
 }
