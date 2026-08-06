@@ -1,15 +1,12 @@
-# SmartSplit AI 0.7.3
+# SmartSplit AI 0.7.4
 
-## Correctif ouverture multi-pieces
+## Restaure et corrige
 
-- A l'ouverture, les corps d'un 3MF ne sont plus reorientes pour l'impression.
-- Chaque piece est seulement centree et posee a plat sur son plateau (Z=0).
-- Evite le buste couche / flottant et le plateau qui parait penche.
-- L'orientation print (faces de coupe a plat) reste active apres Generer les morceaux.
-- Caméra d'ouverture plus haute, vue plateau horizontale.
+- **A propos** restaure (bouton barre du haut) : version, notes apres MAJ, bouton Verifier les mises a jour.
+- Notes de version affichees apres une mise a jour (plus ignorees silencieusement).
+- Pieces posees sur le plateau : packing sur geometrie deja groundee + Z force a 0 apres rotation.
+- Filtre renforce des micro-debris / tenons isoles (plus de pieces flottantes dans le vide).
+- Helper de mise a jour aussi en extraResources + chemins de secours.
+- Messages de statut clairs pour le check update (plus d'echec silencieux).
 
-## Deja en 0.7.2
-
-- Fix critique updater (parseVersion).
-
-Installateur : SmartSplit_AI_Setup_0.7.3.exe
+Installateur : SmartSplit_AI_Setup_0.7.4.exe

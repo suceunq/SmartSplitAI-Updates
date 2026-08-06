@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "0.7.3",
-  "publishedAt": "2026-08-06T13:44:57.500Z",
-  "notes": "# SmartSplit AI 0.7.3\r\n\r\n## Correctif ouverture multi-pieces\r\n\r\n- A l'ouverture, les corps d'un 3MF ne sont plus reorientes pour l'impression.\r\n- Chaque piece est seulement centree et posee a plat sur son plateau (Z=0).\r\n- Evite le buste couche / flottant et le plateau qui parait penche.\r\n- L'orientation print (faces de coupe a plat) reste active apres Generer les morceaux.\r\n- Caméra d'ouverture plus haute, vue plateau horizontale.\r\n\r\n## Deja en 0.7.2\r\n\r\n- Fix critique updater (parseVersion).\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.7.3.exe\r\n",
+  "version": "0.7.4",
+  "publishedAt": "2026-08-06T13:57:28.273Z",
+  "notes": "# SmartSplit AI 0.7.4\r\n\r\n## Restaure et corrige\r\n\r\n- **A propos** restaure (bouton barre du haut) : version, notes apres MAJ, bouton Verifier les mises a jour.\r\n- Notes de version affichees apres une mise a jour (plus ignorees silencieusement).\r\n- Pieces posees sur le plateau : packing sur geometrie deja groundee + Z force a 0 apres rotation.\r\n- Filtre renforce des micro-debris / tenons isoles (plus de pieces flottantes dans le vide).\r\n- Helper de mise a jour aussi en extraResources + chemins de secours.\r\n- Messages de statut clairs pour le check update (plus d'echec silencieux).\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.7.4.exe\r\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.7.3.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.7.3/SmartSplit_AI_Setup_0.7.3.exe",
-    "sha256": "f265e61acb7e35871b0b91abc66967e36ae405bcd6b197eaa80c4324913f0159",
-    "size": 99904933
+    "name": "SmartSplit_AI_Setup_0.7.4.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.7.4/SmartSplit_AI_Setup_0.7.4.exe",
+    "sha256": "1401f85df404ca6fadd17154b3fc1df576bbd6194f2e87411410a0825a0028d0",
+    "size": 99907572
   }
 }
