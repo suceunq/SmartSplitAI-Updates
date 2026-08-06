@@ -1,26 +1,22 @@
-# SmartSplit AI 0.6.9
+# SmartSplit AI 0.7.0
 
-## Préparation plus simple
+## Shipping unique : monorepo `apps/desktop`
 
-- Trois niveaux de contrôle : **Automatique**, **Assisté** et **Manuel**.
-- Le mode automatique garde les réglages techniques hors du parcours principal.
-- Les estimations de surplomb, stabilité, supports, matière et durée sont visibles avant export.
+- Suppression définitive du legacy `obj-slice-desktop` (double codebase).
+- Build / packaging / updater unifiés sur Electron + React + packages TS.
 
-## Placement et plateaux fiabilisés
+## Stabilité & qualité
 
-- Placement par silhouette vérifié, avec replis sûrs si une proposition présente un chevauchement.
-- Les pièces indépendantes d'un même 3MF disposent de plateaux distincts et peuvent être sélectionnées séparément.
-- Chaque pièce est reposée à Z = 0 et contrôlée contre les limites du plateau.
-- Les orientations instables ou à faible surface d'appui sont signalées clairement.
+- **Timeouts worker** (analyze / split / components) pour éviter les freezes sur gros maillages.
+- **Contrôle final avant export** : hors plateau, hauteur, flottement, faible appui — bloque les cas critiques.
+- **Rapport d’export** texte généré à côté des 3MF.
+- Packing multi-pièces densifié (0°/90°) avec repli one-per-plate.
+- Orientation face plane après découpe (déjà en amont) + labels pièces visibles en 3D.
+- `update-helper.cjs` copié dans le build (fix installation silencieuse des mises à jour).
+- CI stricte : plus de refs obj-slice, plus de bundles commités, helper présent après build.
 
-## Ajustements manuels utiles
+## Mise à jour
 
-- Déplacement direct à la souris, rotation à 90°, changement de plateau et verrouillage d'une pièce.
-- Réoptimisation limitée aux pièces non verrouillées.
-- Annuler/Rétablir fonctionne aussi pour les placements.
-
-## Stabilité et sécurité
-
-- Les imports successifs de gros modèles libèrent correctement les anciennes ressources 3D.
-- La réparation refuse désormais toute opération qui déformerait fortement le modèle et conserve l'original.
-- Les contrôles de centrage, d'appui, de collision, d'export et de mise à jour ont été renforcés.
+- Canal : `suceunq/SmartSplitAI-Updates`
+- Installateur : `SmartSplit_AI_Setup_0.7.0.exe`
+- Rollback possible vers 0.6.9

@@ -1,21 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.9",
-  "publishedAt": "2026-08-06T03:59:10.378Z",
-  "notes": "# SmartSplit AI 0.6.9\n\n## Préparation plus simple\n\n- Trois niveaux de contrôle : **Automatique**, **Assisté** et **Manuel**.\n- Le mode automatique garde les réglages techniques hors du parcours principal.\n- Les estimations de surplomb, stabilité, supports, matière et durée sont visibles avant export.\n\n## Placement et plateaux fiabilisés\n\n- Placement par silhouette vérifié, avec replis sûrs si une proposition présente un chevauchement.\n- Les pièces indépendantes d'un même 3MF disposent de plateaux distincts et peuvent être sélectionnées séparément.\n- Chaque pièce est reposée à Z = 0 et contrôlée contre les limites du plateau.\n- Les orientations instables ou à faible surface d'appui sont signalées clairement.\n\n## Ajustements manuels utiles\n\n- Déplacement direct à la souris, rotation à 90°, changement de plateau et verrouillage d'une pièce.\n- Réoptimisation limitée aux pièces non verrouillées.\n- Annuler/Rétablir fonctionne aussi pour les placements.\n\n## Stabilité et sécurité\n\n- Les imports successifs de gros modèles libèrent correctement les anciennes ressources 3D.\n- La réparation refuse désormais toute opération qui déformerait fortement le modèle et conserve l'original.\n- Les contrôles de centrage, d'appui, de collision, d'export et de mise à jour ont été renforcés.\n",
+  "version": "0.7.0",
+  "publishedAt": "2026-08-06T04:57:12.076Z",
+  "notes": "# SmartSplit AI 0.7.0\n\n## Shipping unique : monorepo `apps/desktop`\n\n- Suppression définitive du legacy `obj-slice-desktop` (double codebase).\n- Build / packaging / updater unifiés sur Electron + React + packages TS.\n\n## Stabilité & qualité\n\n- **Timeouts worker** (analyze / split / components) pour éviter les freezes sur gros maillages.\n- **Contrôle final avant export** : hors plateau, hauteur, flottement, faible appui — bloque les cas critiques.\n- **Rapport d’export** texte généré à côté des 3MF.\n- Packing multi-pièces densifié (0°/90°) avec repli one-per-plate.\n- Orientation face plane après découpe (déjà en amont) + labels pièces visibles en 3D.\n- `update-helper.cjs` copié dans le build (fix installation silencieuse des mises à jour).\n- CI stricte : plus de refs obj-slice, plus de bundles commités, helper présent après build.\n\n## Mise à jour\n\n- Canal : `suceunq/SmartSplitAI-Updates`\n- Installateur : `SmartSplit_AI_Setup_0.7.0.exe`\n- Rollback possible vers 0.6.9\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.9.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.9/SmartSplit_AI_Setup_0.6.9.exe",
-    "sha256": "2203c2fcdac02a1443de2e687930f8f2531f4ef0977d5767747f3f85503bff14",
-    "size": 100748471
-  },
-  "rollback": {
-    "version": "0.6.8",
-    "package": {
-      "name": "SmartSplit_AI_Setup_0.6.8.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.8/SmartSplit_AI_Setup_0.6.8.exe",
-      "sha256": "ffa0291de0e2aba9886a4f293e2d646da855772444090300913fafdeb02c7cda",
-      "size": 100494919
-    }
+    "name": "SmartSplit_AI_Setup_0.7.0.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.7.0/SmartSplit_AI_Setup_0.7.0.exe",
+    "sha256": "bd1e069cf1a7d3f65405bc3c779b7718d1a07f503339156569e4911d7011649c",
+    "size": 99902499
   }
 }
