@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.8",
-  "publishedAt": "2026-08-05T02:58:41.897Z",
-  "notes": "# SmartSplit AI 0.6.8\n\n## Fenêtre À propos simplifiée\n\n- La ligne « Développeur » a été retirée.\n- Le bouton « Site officiel / GitHub » devient « Site officiel ».\n- Le bouton ouvre désormais directement `https://www.bob59.fr/` dans le navigateur par défaut.\n- L'ouverture externe est limitée au domaine HTTPS officiel `www.bob59.fr`.\n",
+  "version": "0.6.9",
+  "publishedAt": "2026-08-06T03:59:10.378Z",
+  "notes": "# SmartSplit AI 0.6.9\n\n## Préparation plus simple\n\n- Trois niveaux de contrôle : **Automatique**, **Assisté** et **Manuel**.\n- Le mode automatique garde les réglages techniques hors du parcours principal.\n- Les estimations de surplomb, stabilité, supports, matière et durée sont visibles avant export.\n\n## Placement et plateaux fiabilisés\n\n- Placement par silhouette vérifié, avec replis sûrs si une proposition présente un chevauchement.\n- Les pièces indépendantes d'un même 3MF disposent de plateaux distincts et peuvent être sélectionnées séparément.\n- Chaque pièce est reposée à Z = 0 et contrôlée contre les limites du plateau.\n- Les orientations instables ou à faible surface d'appui sont signalées clairement.\n\n## Ajustements manuels utiles\n\n- Déplacement direct à la souris, rotation à 90°, changement de plateau et verrouillage d'une pièce.\n- Réoptimisation limitée aux pièces non verrouillées.\n- Annuler/Rétablir fonctionne aussi pour les placements.\n\n## Stabilité et sécurité\n\n- Les imports successifs de gros modèles libèrent correctement les anciennes ressources 3D.\n- La réparation refuse désormais toute opération qui déformerait fortement le modèle et conserve l'original.\n- Les contrôles de centrage, d'appui, de collision, d'export et de mise à jour ont été renforcés.\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.6.8.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.8/SmartSplit_AI_Setup_0.6.8.exe",
-    "sha256": "ffa0291de0e2aba9886a4f293e2d646da855772444090300913fafdeb02c7cda",
-    "size": 100494919
+    "name": "SmartSplit_AI_Setup_0.6.9.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.9/SmartSplit_AI_Setup_0.6.9.exe",
+    "sha256": "2203c2fcdac02a1443de2e687930f8f2531f4ef0977d5767747f3f85503bff14",
+    "size": 100748471
   },
   "rollback": {
-    "version": "0.6.7",
+    "version": "0.6.8",
     "package": {
-      "name": "SmartSplit_AI_Setup_0.6.7.exe",
-      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.7/SmartSplit_AI_Setup_0.6.7.exe",
-      "sha256": "5da0ed5f716094e16c303a93a837b90d517e6ed53e7e8b6624d8301dc2c83416",
-      "size": 100494927
+      "name": "SmartSplit_AI_Setup_0.6.8.exe",
+      "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.6.8/SmartSplit_AI_Setup_0.6.8.exe",
+      "sha256": "ffa0291de0e2aba9886a4f293e2d646da855772444090300913fafdeb02c7cda",
+      "size": 100494919
     }
   }
 }
