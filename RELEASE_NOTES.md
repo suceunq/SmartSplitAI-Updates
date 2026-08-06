@@ -1,20 +1,14 @@
-# SmartSplit AI 0.7.1
+# SmartSplit AI 0.7.2
 
-## Correctif majeur : découpe grand format (2 m)
+## Correctif critique : mise a jour automatique
 
-- **Packing multi-pièces par plateau** (plus un plateau par micro-fragment).
-- **Filtrage des micro-débris / tenons isolés** après découpe.
-- **Pas de coupes « bonus »** inutiles quand le modèle exige déjà des centaines de morceaux.
-- **Alerte** si le volume final est trop grand pour le lit choisi.
-- Corps 3MF parasites (< 50 triangles) ignorés à l’import.
+- Bug bloquant : les regex de version etaient double-echappees.
+- Resultat : le manifeste etait toujours rejete (Version du manifeste invalide) — aucune mise a jour ne partait.
+- Correction de parseVersion, validation du paquet, et logs.
+- Tests unitaires sur le comparateur de versions.
 
-## Déjà en 0.7.0 +
+## Inclus depuis 0.7.1
 
-- Plateau personnalisé (saisie libre X/Y/Z).
-- Échelle en **pourcentage** (plus de pouces).
-- Caméra qui ne « penche » plus le plateau à chaque clic.
-- Contrôle pré-export, timeouts worker, update-helper.
+- Packing multi-pieces, filtre micro-debris, plateau personnalise, echelle %, camera stable.
 
-## Mise à jour
-
-Installateur : SmartSplit_AI_Setup_0.7.1.exe
+Installateur : SmartSplit_AI_Setup_0.7.2.exe
