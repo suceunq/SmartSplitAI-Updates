@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "0.7.0",
-  "publishedAt": "2026-08-06T04:57:12.076Z",
-  "notes": "# SmartSplit AI 0.7.0\n\n## Shipping unique : monorepo `apps/desktop`\n\n- Suppression définitive du legacy `obj-slice-desktop` (double codebase).\n- Build / packaging / updater unifiés sur Electron + React + packages TS.\n\n## Stabilité & qualité\n\n- **Timeouts worker** (analyze / split / components) pour éviter les freezes sur gros maillages.\n- **Contrôle final avant export** : hors plateau, hauteur, flottement, faible appui — bloque les cas critiques.\n- **Rapport d’export** texte généré à côté des 3MF.\n- Packing multi-pièces densifié (0°/90°) avec repli one-per-plate.\n- Orientation face plane après découpe (déjà en amont) + labels pièces visibles en 3D.\n- `update-helper.cjs` copié dans le build (fix installation silencieuse des mises à jour).\n- CI stricte : plus de refs obj-slice, plus de bundles commités, helper présent après build.\n\n## Mise à jour\n\n- Canal : `suceunq/SmartSplitAI-Updates`\n- Installateur : `SmartSplit_AI_Setup_0.7.0.exe`\n- Rollback possible vers 0.6.9\n",
+  "version": "0.7.1",
+  "publishedAt": "2026-08-06T12:03:43.766Z",
+  "notes": "# SmartSplit AI 0.7.1\n\n## Correctif majeur : découpe grand format (2 m)\n\n- **Packing multi-pièces par plateau** (plus un plateau par micro-fragment).\n- **Filtrage des micro-débris / tenons isolés** après découpe.\n- **Pas de coupes « bonus »** inutiles quand le modèle exige déjà des centaines de morceaux.\n- **Alerte** si le volume final est trop grand pour le lit choisi.\n- Corps 3MF parasites (< 50 triangles) ignorés à l’import.\n\n## Déjà en 0.7.0 +\n\n- Plateau personnalisé (saisie libre X/Y/Z).\n- Échelle en **pourcentage** (plus de pouces).\n- Caméra qui ne « penche » plus le plateau à chaque clic.\n- Contrôle pré-export, timeouts worker, update-helper.\n\n## Mise à jour\n\nInstallateur : SmartSplit_AI_Setup_0.7.1.exe\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.7.0.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.7.0/SmartSplit_AI_Setup_0.7.0.exe",
-    "sha256": "bd1e069cf1a7d3f65405bc3c779b7718d1a07f503339156569e4911d7011649c",
-    "size": 99902499
+    "name": "SmartSplit_AI_Setup_0.7.1.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.7.1/SmartSplit_AI_Setup_0.7.1.exe",
+    "sha256": "09055840b3fe889386593608897fb7e6055ecb459672871e40e743b9d69089df",
+    "size": 99904732
   }
 }

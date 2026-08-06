@@ -1,22 +1,20 @@
-# SmartSplit AI 0.7.0
+# SmartSplit AI 0.7.1
 
-## Shipping unique : monorepo `apps/desktop`
+## Correctif majeur : découpe grand format (2 m)
 
-- Suppression définitive du legacy `obj-slice-desktop` (double codebase).
-- Build / packaging / updater unifiés sur Electron + React + packages TS.
+- **Packing multi-pièces par plateau** (plus un plateau par micro-fragment).
+- **Filtrage des micro-débris / tenons isolés** après découpe.
+- **Pas de coupes « bonus »** inutiles quand le modèle exige déjà des centaines de morceaux.
+- **Alerte** si le volume final est trop grand pour le lit choisi.
+- Corps 3MF parasites (< 50 triangles) ignorés à l’import.
 
-## Stabilité & qualité
+## Déjà en 0.7.0 +
 
-- **Timeouts worker** (analyze / split / components) pour éviter les freezes sur gros maillages.
-- **Contrôle final avant export** : hors plateau, hauteur, flottement, faible appui — bloque les cas critiques.
-- **Rapport d’export** texte généré à côté des 3MF.
-- Packing multi-pièces densifié (0°/90°) avec repli one-per-plate.
-- Orientation face plane après découpe (déjà en amont) + labels pièces visibles en 3D.
-- `update-helper.cjs` copié dans le build (fix installation silencieuse des mises à jour).
-- CI stricte : plus de refs obj-slice, plus de bundles commités, helper présent après build.
+- Plateau personnalisé (saisie libre X/Y/Z).
+- Échelle en **pourcentage** (plus de pouces).
+- Caméra qui ne « penche » plus le plateau à chaque clic.
+- Contrôle pré-export, timeouts worker, update-helper.
 
 ## Mise à jour
 
-- Canal : `suceunq/SmartSplitAI-Updates`
-- Installateur : `SmartSplit_AI_Setup_0.7.0.exe`
-- Rollback possible vers 0.6.9
+Installateur : SmartSplit_AI_Setup_0.7.1.exe
