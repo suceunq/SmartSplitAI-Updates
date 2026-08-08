@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "1.4.0",
-  "publishedAt": "2026-08-08T04:00:12.550Z",
+  "version": "1.5.0",
+  "publishedAt": "2026-08-08T04:03:03.987Z",
   "notes": "SmartSplit AI v1.3.0\n\nViewer 3D professionnel :\n- Rotation 360°, zoom, pan\n- Vues prédéfinies (dessus, face, droite, iso...)\n- Ombres portées, grille, repères de plateau\n- Indicateur d'axes\n- Sélection de pièce par clic\n- Numérotation directe dans la scène\n\nWorkflow complet :\n- Import → Stratégie → Découpe → Export\n- Multiples stratégies de découpe avec scoring\n- Connecteurs automatiques intégrés\n- Progression en temps réel\n\nInterface :\n- Thème sombre professionnel\n- Panneau latéral avec infos modèle et stratégies\n- Sélection et isolation des pièces\n- Barre de progression\n\nSystème :\n- Architecture propre monorepo\n- Workers isolés (pas de freeze)\n- Mise à jour native Windows\n- Build optimisé (~100 MB)\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_1.4.0.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v1.4.0/SmartSplit_AI_Setup_1.4.0.exe",
-    "sha256": "aa3a7b020727e292ca791de87e5e91dc2b65da62fd8cce50abcd812ae4d8cefd",
-    "size": 99942185
+    "name": "SmartSplit_AI_Setup_1.5.0.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v1.5.0/SmartSplit_AI_Setup_1.5.0.exe",
+    "sha256": "d8453896992b756722afae4b07f64069d9a03d62188aff06440336d1709e46bb",
+    "size": 99944926
   }
 }
