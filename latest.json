@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "1.0.0",
-  "publishedAt": "2026-08-08T03:35:19.807Z",
+  "version": "1.1.0",
+  "publishedAt": "2026-08-08T03:45:06.014Z",
   "notes": "SmartSplit AI v1.0.0 - Release initiale v2\n\nArchitecture entierement repensee, codebase propre.\n\n- Import STL, 3MF\n- Analyse (manifold, volume, triangles)\n- Decoupe automatique\n- Export 3MF par piece\n- Numérotation Piece 01, 02...\n- Interface sobre et rapide\n- Mise a jour native Windows (popup)\n- Worker isole (pas de freeze)\n- Build 560 KB renderer, 14 KB main\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_1.0.0.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v1.0.0/SmartSplit_AI_Setup_1.0.0.exe",
-    "sha256": "acb94a6f21489f05e812113ba79ad54638fe7dfdbd07ada3b6d50fe875869cf4",
-    "size": 99804681
+    "name": "SmartSplit_AI_Setup_1.1.0.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v1.1.0/SmartSplit_AI_Setup_1.1.0.exe",
+    "sha256": "976be20938e363d604f28e8918fe663afc0cac2acb0ef2094ed7b28bd30333f7",
+    "size": 99943550
   }
 }
