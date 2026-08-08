@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "0.7.4",
-  "publishedAt": "2026-08-06T13:57:28.273Z",
-  "notes": "# SmartSplit AI 0.7.4\r\n\r\n## Restaure et corrige\r\n\r\n- **A propos** restaure (bouton barre du haut) : version, notes apres MAJ, bouton Verifier les mises a jour.\r\n- Notes de version affichees apres une mise a jour (plus ignorees silencieusement).\r\n- Pieces posees sur le plateau : packing sur geometrie deja groundee + Z force a 0 apres rotation.\r\n- Filtre renforce des micro-debris / tenons isoles (plus de pieces flottantes dans le vide).\r\n- Helper de mise a jour aussi en extraResources + chemins de secours.\r\n- Messages de statut clairs pour le check update (plus d'echec silencieux).\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.7.4.exe\r\n",
+  "version": "0.7.5",
+  "publishedAt": "2026-08-08T02:36:41.730Z",
+  "notes": "# SmartSplit AI 0.7.5\r\n\r\n## Hotfix stabilite\r\n\r\n- Protection contre crash si l'API preload n'est pas prete (fallback sur demo).\r\n- Appel getAppInfo / getPendingReleaseNotes robuste (verifie existence avant appel).\r\n- Correction packing et filtrage pieces (deja en 0.7.4).\r\n- A propos + Verifier les mises a jour (deja en 0.7.4).\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.7.5.exe\r\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.7.4.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.7.4/SmartSplit_AI_Setup_0.7.4.exe",
-    "sha256": "1401f85df404ca6fadd17154b3fc1df576bbd6194f2e87411410a0825a0028d0",
-    "size": 99907572
+    "name": "SmartSplit_AI_Setup_0.7.5.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.7.5/SmartSplit_AI_Setup_0.7.5.exe",
+    "sha256": "da19eb62c58195b2a63e2eece93d1819bb217fdc8d4437e099261ccb3db91d90",
+    "size": 99908488
   }
 }
