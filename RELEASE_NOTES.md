@@ -1,23 +1,17 @@
-# SmartSplit AI 0.8.0 — Release stable
+# SmartSplit AI 0.9.0 — Version finale
 
-## Nouveau systeme de mise a jour
-- Dialogue « Nouvelle version disponible » avec boutons Installer / Plus tard.
-- Barre de progression pendant le telechargement.
-- Telechargement silencieux en arriere-plan si « Plus tard ».
+## Nouveau
+- **Numérotation Pièce 01, 02...** stable, visible en 3D et dans les fichiers exportés.
+- **Export individuel** : un fichier 3MF par pièce (modele_P01.3mf, modele_P02.3mf...).
+- **Dialogue de mise à jour** avec progression et bouton Plus tard.
+- **Alerte manifold** si le modèle importé n'est pas étanche.
 
-## Correctifs de stabilite
-- Pieces posees sur le plateau (Z=0) sans flottement.
-- Filtre des micro-debris / tenons isoles apres decoupe.
-- Packing multi-pieces par plateau.
-- Camera 360° degrippee (polar angle libre).
-- Plateau personnalise (saisie X/Y/Z libre).
-- Echelle en pourcentage (plus de pouces).
-- parseVersion corrige (les mises a jour fonctionnent).
+## Corrections
+- Pièces posées sur le plateau (Z=0), plus de flottement.
+- Micro-débris filtrés après découpe.
+- Caméra 360° libre.
+- Plateau personnalisé, échelle en pourcentage.
+- parseVersion corrigé (les mises à jour fonctionnent).
+- Worker timeouts (plus de freeze sur gros modèles).
 
-## Architecture
-- Monorepo apps/desktop uniquement (legacy obj-slice supprime).
-- Worker timeouts pour eviter les freezes gros modeles.
-- Controle pre-export (hors plateau, hauteur, appui).
-- CI stricte.
-
-Installateur : SmartSplit_AI_Setup_0.8.0.exe
+Installateur : SmartSplit_AI_Setup_0.9.0.exe

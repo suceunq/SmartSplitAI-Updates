@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "0.8.0",
-  "publishedAt": "2026-08-08T02:56:10.605Z",
-  "notes": "# SmartSplit AI 0.8.0 — Release stable\r\n\r\n## Nouveau systeme de mise a jour\r\n- Dialogue « Nouvelle version disponible » avec boutons Installer / Plus tard.\r\n- Barre de progression pendant le telechargement.\r\n- Telechargement silencieux en arriere-plan si « Plus tard ».\r\n\r\n## Correctifs de stabilite\r\n- Pieces posees sur le plateau (Z=0) sans flottement.\r\n- Filtre des micro-debris / tenons isoles apres decoupe.\r\n- Packing multi-pieces par plateau.\r\n- Camera 360° degrippee (polar angle libre).\r\n- Plateau personnalise (saisie X/Y/Z libre).\r\n- Echelle en pourcentage (plus de pouces).\r\n- parseVersion corrige (les mises a jour fonctionnent).\r\n\r\n## Architecture\r\n- Monorepo apps/desktop uniquement (legacy obj-slice supprime).\r\n- Worker timeouts pour eviter les freezes gros modeles.\r\n- Controle pre-export (hors plateau, hauteur, appui).\r\n- CI stricte.\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.8.0.exe\r\n",
+  "version": "0.9.0",
+  "publishedAt": "2026-08-08T02:59:56.499Z",
+  "notes": "# SmartSplit AI 0.9.0 — Version finale\r\n\r\n## Nouveau\r\n- **Numérotation Pièce 01, 02...** stable, visible en 3D et dans les fichiers exportés.\r\n- **Export individuel** : un fichier 3MF par pièce (modele_P01.3mf, modele_P02.3mf...).\r\n- **Dialogue de mise à jour** avec progression et bouton Plus tard.\r\n- **Alerte manifold** si le modèle importé n'est pas étanche.\r\n\r\n## Corrections\r\n- Pièces posées sur le plateau (Z=0), plus de flottement.\r\n- Micro-débris filtrés après découpe.\r\n- Caméra 360° libre.\r\n- Plateau personnalisé, échelle en pourcentage.\r\n- parseVersion corrigé (les mises à jour fonctionnent).\r\n- Worker timeouts (plus de freeze sur gros modèles).\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.9.0.exe\r\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.8.0.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.8.0/SmartSplit_AI_Setup_0.8.0.exe",
-    "sha256": "0e26064e07f0f60cc2aae7a4cac9a1fd641e2618867ea9c709de854183b99717",
-    "size": 99905517
+    "name": "SmartSplit_AI_Setup_0.9.0.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.9.0/SmartSplit_AI_Setup_0.9.0.exe",
+    "sha256": "3854834407f08bdf788bd5ae0431940e5c8074009c08f5f83a7cf88709c015e6",
+    "size": 99905361
   }
 }
