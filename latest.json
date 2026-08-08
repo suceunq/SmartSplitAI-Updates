@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "0.7.5",
-  "publishedAt": "2026-08-08T02:36:41.730Z",
-  "notes": "# SmartSplit AI 0.7.5\r\n\r\n## Hotfix stabilite\r\n\r\n- Protection contre crash si l'API preload n'est pas prete (fallback sur demo).\r\n- Appel getAppInfo / getPendingReleaseNotes robuste (verifie existence avant appel).\r\n- Correction packing et filtrage pieces (deja en 0.7.4).\r\n- A propos + Verifier les mises a jour (deja en 0.7.4).\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.7.5.exe\r\n",
+  "version": "0.8.0",
+  "publishedAt": "2026-08-08T02:56:10.605Z",
+  "notes": "# SmartSplit AI 0.8.0 — Release stable\r\n\r\n## Nouveau systeme de mise a jour\r\n- Dialogue « Nouvelle version disponible » avec boutons Installer / Plus tard.\r\n- Barre de progression pendant le telechargement.\r\n- Telechargement silencieux en arriere-plan si « Plus tard ».\r\n\r\n## Correctifs de stabilite\r\n- Pieces posees sur le plateau (Z=0) sans flottement.\r\n- Filtre des micro-debris / tenons isoles apres decoupe.\r\n- Packing multi-pieces par plateau.\r\n- Camera 360° degrippee (polar angle libre).\r\n- Plateau personnalise (saisie X/Y/Z libre).\r\n- Echelle en pourcentage (plus de pouces).\r\n- parseVersion corrige (les mises a jour fonctionnent).\r\n\r\n## Architecture\r\n- Monorepo apps/desktop uniquement (legacy obj-slice supprime).\r\n- Worker timeouts pour eviter les freezes gros modeles.\r\n- Controle pre-export (hors plateau, hauteur, appui).\r\n- CI stricte.\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.8.0.exe\r\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.7.5.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.7.5/SmartSplit_AI_Setup_0.7.5.exe",
-    "sha256": "da19eb62c58195b2a63e2eece93d1819bb217fdc8d4437e099261ccb3db91d90",
-    "size": 99908488
+    "name": "SmartSplit_AI_Setup_0.8.0.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.8.0/SmartSplit_AI_Setup_0.8.0.exe",
+    "sha256": "0e26064e07f0f60cc2aae7a4cac9a1fd641e2618867ea9c709de854183b99717",
+    "size": 99905517
   }
 }
