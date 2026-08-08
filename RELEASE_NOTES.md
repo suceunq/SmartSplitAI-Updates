@@ -1,17 +1,13 @@
-# SmartSplit AI 0.9.0 — Version finale
+SmartSplit AI v1.0.0 - Release initiale v2
 
-## Nouveau
-- **Numérotation Pièce 01, 02...** stable, visible en 3D et dans les fichiers exportés.
-- **Export individuel** : un fichier 3MF par pièce (modele_P01.3mf, modele_P02.3mf...).
-- **Dialogue de mise à jour** avec progression et bouton Plus tard.
-- **Alerte manifold** si le modèle importé n'est pas étanche.
+Architecture entierement repensee, codebase propre.
 
-## Corrections
-- Pièces posées sur le plateau (Z=0), plus de flottement.
-- Micro-débris filtrés après découpe.
-- Caméra 360° libre.
-- Plateau personnalisé, échelle en pourcentage.
-- parseVersion corrigé (les mises à jour fonctionnent).
-- Worker timeouts (plus de freeze sur gros modèles).
-
-Installateur : SmartSplit_AI_Setup_0.9.0.exe
+- Import STL, 3MF
+- Analyse (manifold, volume, triangles)
+- Decoupe automatique
+- Export 3MF par piece
+- Numérotation Piece 01, 02...
+- Interface sobre et rapide
+- Mise a jour native Windows (popup)
+- Worker isole (pas de freeze)
+- Build 560 KB renderer, 14 KB main

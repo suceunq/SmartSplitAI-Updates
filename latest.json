@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "0.9.4",
-  "publishedAt": "2026-08-08T03:22:23.498Z",
-  "notes": "# SmartSplit AI 0.9.0 — Version finale\r\n\r\n## Nouveau\r\n- **Numérotation Pièce 01, 02...** stable, visible en 3D et dans les fichiers exportés.\r\n- **Export individuel** : un fichier 3MF par pièce (modele_P01.3mf, modele_P02.3mf...).\r\n- **Dialogue de mise à jour** avec progression et bouton Plus tard.\r\n- **Alerte manifold** si le modèle importé n'est pas étanche.\r\n\r\n## Corrections\r\n- Pièces posées sur le plateau (Z=0), plus de flottement.\r\n- Micro-débris filtrés après découpe.\r\n- Caméra 360° libre.\r\n- Plateau personnalisé, échelle en pourcentage.\r\n- parseVersion corrigé (les mises à jour fonctionnent).\r\n- Worker timeouts (plus de freeze sur gros modèles).\r\n\r\nInstallateur : SmartSplit_AI_Setup_0.9.0.exe\r\n",
+  "version": "1.0.0",
+  "publishedAt": "2026-08-08T03:35:19.807Z",
+  "notes": "SmartSplit AI v1.0.0 - Release initiale v2\n\nArchitecture entierement repensee, codebase propre.\n\n- Import STL, 3MF\n- Analyse (manifold, volume, triangles)\n- Decoupe automatique\n- Export 3MF par piece\n- Numérotation Piece 01, 02...\n- Interface sobre et rapide\n- Mise a jour native Windows (popup)\n- Worker isole (pas de freeze)\n- Build 560 KB renderer, 14 KB main\n",
   "package": {
-    "name": "SmartSplit_AI_Setup_0.9.4.exe",
-    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v0.9.4/SmartSplit_AI_Setup_0.9.4.exe",
-    "sha256": "724c06f934a84462e713d3e32cc259026aa9c64e26e5d6eab9c2f6c6178347d6",
-    "size": 99905098
+    "name": "SmartSplit_AI_Setup_1.0.0.exe",
+    "url": "https://github.com/suceunq/SmartSplitAI-Updates/releases/download/v1.0.0/SmartSplit_AI_Setup_1.0.0.exe",
+    "sha256": "acb94a6f21489f05e812113ba79ad54638fe7dfdbd07ada3b6d50fe875869cf4",
+    "size": 99804681
   }
 }
